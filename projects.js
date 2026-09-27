@@ -46,8 +46,8 @@ const PROJECTS = [
   {
     category: 'Documentary',
     title: 'Streets of Malleswaram',
-    summary: 'A documentary on the streets of Malleswaram, Bengaluru.',
-    description: 'A short documentary that walks through the streets of Malleswaram and the places and people that give the neighbourhood its character.',
+    summary: 'A short documentary on the streets of Malleswaram, Bengaluru.',
+    description: 'A short documentary that walks the streets of Malleswaram, one of Bengaluru’s oldest neighbourhoods, taking in its temple towers, markets and everyday street life, and the people who give the area its character.',
     cover: 'assets/work/streets-of-malleswaram.jpg',
     youtube: 'https://www.youtube.com/watch?v=oSz030pkNXw',
     disciplines: ['Documentary & visual stories'],
@@ -56,12 +56,12 @@ const PROJECTS = [
   {
     category: 'Short film · Romantic thriller',
     title: 'Ennam Pol Vazhkai',
-    summary: 'எண்ணம் போல் வாழ்க்கை — a Tamil romantic thriller short film.',
-    description: 'A romantic thriller short film directed by Roby Jayson and released by King Pictures.',
+    summary: 'எண்ணம் போல் வாழ்க்கை: a Tamil romantic thriller. Pre-production and production crew.',
+    description: 'A Tamil romantic thriller short film directed by Roby Jayson and released by King Pictures. I was part of the pre-production and production team and a key member of the crew, from planning the shoot through to filming. The film went on to win at several film festivals, including Indian Film House and the Indo French International Film Festival.',
     cover: 'assets/work/ennam-pol-vazhkai.jpg',
     youtube: 'https://www.youtube.com/watch?v=6UJDK0bspKc',
     disciplines: ['Documentary & visual stories'],
-    scope: []
+    scope: ['Pre-production', 'Production team', 'Key crew member']
   },
 
   // EXAMPLE — this one is hidden. Fill it in and delete the "hidden: true" line to show it.
@@ -87,9 +87,152 @@ const PROJECTS = [
    'Short-form video', 'Social content', 'Motion graphics', 'Graphic design',
    'AI creative', 'Social media management', 'Digital campaigns',
    'Documentary & visual stories'
+
+   Extra fields for this list:
+     group    sub-heading inside a discipline, e.g. 'Social media' or 'Print & brand collateral'
+     aspect   thumbnail shape for images: '1/1' square, '4/5' Instagram portrait, 'a4', '5/2' wide, '14/9' spread, '7/9' page
+     badge    small label on the thumbnail instead of a duration, e.g. '7 posts'
    ========================================================================== */
 
 const DISCIPLINE_WORK = [
+
+  // ---------- GRAPHIC DESIGN ----------
+  {
+    disciplines: ['Graphic design'],
+    group: 'Social media',
+    category: 'Social media · Ugadi campaign',
+    client: 'Indium Bloom',
+    title: 'Plots of Gold',
+    summary: 'A seven-post Ugadi carousel for villa plots off Mysore Road.',
+    description: 'A seven-post Ugadi festive campaign for Indium Bloom’s villa plots at Hejjala, off Mysore Road. One “Plots of Gold” system runs through every post (gold lettering, a glowing location pin over green land and the festive offer of up to 30g gold), while each post leads with a single reason to buy: green living in Hejjala, a 130-acre township, Phase 2 now launched, BMRDA and RERA approval, 10 minutes from Challaghatta Metro, and the 1,850-acre Kumbalgodu forest with two lakes.',
+    cover: 'assets/work/design/plots-of-gold-1.jpg',
+    gallery: ['assets/work/design/plots-of-gold-1.jpg','assets/work/design/plots-of-gold-2.jpg','assets/work/design/plots-of-gold-3.jpg','assets/work/design/plots-of-gold-4.jpg','assets/work/design/plots-of-gold-5.jpg','assets/work/design/plots-of-gold-6.jpg','assets/work/design/plots-of-gold-7.jpg'],
+    aspect: '1/1',
+    badge: '7 posts',
+    scope: ['Campaign layout', 'Social post series', 'Festive offer design', 'Typography']
+  },
+  {
+    disciplines: ['Graphic design'],
+    group: 'Social media',
+    category: 'Social media · Awareness day',
+    client: 'Sriyah Insurance Brokers × Namma Cover',
+    title: 'National Fire Service Week',
+    summary: 'A tribute post honouring firefighters, April 14–20.',
+    description: 'An awareness post for Sriyah Insurance Brokers and Namma Cover marking National Fire Service Week (April 14–20). A fire-lit scene of firefighters walking toward the flames carries a short tribute to their courage, with the closing line, “Your service, sacrifice, and spirit inspire us all”, picked out in yellow.',
+    cover: 'assets/work/design/sriyah-fire-service-week.jpg',
+    gallery: ['assets/work/design/sriyah-fire-service-week.jpg'],
+    aspect: '4/5',
+    scope: []
+  },
+  {
+    disciplines: ['Graphic design'],
+    group: 'Social media',
+    category: 'Social media · Festive greeting',
+    client: 'Sriyah Insurance Brokers × Namma Cover',
+    title: 'Eid-ul-Fitr Mubarak',
+    summary: 'A warm Eid greeting in ivory and gold.',
+    description: 'An Eid-ul-Fitr greeting for Sriyah Insurance Brokers and Namma Cover. A soft ivory palette, a mosque silhouette, glowing lanterns and an open Quran on a prayer rug frame a gold calligraphic headline and a three-line wish for delight, love and contentment.',
+    cover: 'assets/work/design/sriyah-eid-ul-fitr.jpg',
+    gallery: ['assets/work/design/sriyah-eid-ul-fitr.jpg'],
+    aspect: '4/5',
+    scope: []
+  },
+  {
+    disciplines: ['Graphic design'],
+    group: 'Print & brand collateral',
+    category: 'Print · Poster system',
+    client: 'GS Global',
+    title: 'GS Global Poster Series',
+    summary: 'An A4 announcement poster and four reusable brand templates.',
+    description: 'An A4 poster system for GS Global Group. The lead poster announces IPS Kamaraj joining as senior advisor, quoted by CA Ganapathi Subramanian. Four matching templates reuse the brand’s blue gradients, fingerprint arcs and sticker shapes in different layouts, so the team can turn out new on-brand posters quickly.',
+    cover: 'assets/work/design/gs-global-advisor-announcement.jpg',
+    gallery: ['assets/work/design/gs-global-advisor-announcement.jpg','assets/work/design/gs-global-template-1.jpg','assets/work/design/gs-global-template-2.jpg','assets/work/design/gs-global-template-3.jpg','assets/work/design/gs-global-template-4.jpg'],
+    aspect: 'a4',
+    badge: '5 designs',
+    scope: ['Poster design', 'Template system', 'Print-ready A4']
+  },
+  {
+    disciplines: ['Graphic design'],
+    group: 'Print & brand collateral',
+    category: 'Print · Custom die-cut',
+    client: 'Indium Blossom',
+    title: 'Custom Handover Key',
+    summary: 'An oversized ceremonial key for property handovers.',
+    description: 'A custom die-cut handover key for Indium Blossom at Indium Lake Forest, off Mysore Road. Designed at 30 × 12 inches in the brand’s deep maroon with gold wordmark detailing, it gives homeowners a ceremonial key to hold up in their handover photos.',
+    cover: 'assets/work/design/handover-key.png',
+    gallery: ['assets/work/design/handover-key.png'],
+    aspect: '5/2',
+    scope: ['Die-cut shape', 'Print design', 'Brand application']
+  },
+
+  {
+    disciplines: ['Graphic design'],
+    group: 'College magazine',
+    category: 'College magazine · Story layout',
+    client: 'Kids magazine (college project)',
+    title: 'A Trip Through the Memory Lane',
+    summary: 'A three-spread story for young readers, set in bright, playful type.',
+    description: 'A three-spread story layout from a kids’ magazine made by our college team for readers aged 5 to 13. Ten-year-old Joakim finds an old photo album in the attic and drifts through his father’s memories: the Maratha Mandir theatre, Juhu Beach, the family’s first car and Cartoon Network. The text sits inside hand-drawn shapes on sunny yellow, key words pop out in coloured, textured letters, and a glossary on the last page helps children with new words.',
+    cover: 'assets/work/design/magazine/memory-lane-1.jpg',
+    gallery: ['assets/work/design/magazine/memory-lane-1.jpg','assets/work/design/magazine/memory-lane-2.jpg','assets/work/design/magazine/memory-lane-3.jpg'],
+    aspect: '14/9',
+    badge: '3 spreads',
+    scope: ['Story layout', 'Playful typography', 'Glossary page', 'Team project']
+  },
+  {
+    disciplines: ['Graphic design'],
+    group: 'College magazine',
+    category: 'College magazine · Story layout',
+    client: 'Kids magazine (college project)',
+    title: 'The Cat Story',
+    summary: 'A write-along story children trace with a pencil.',
+    description: 'A three-page write-along story about a mother cat and her kittens. Each page gives children handwriting guidelines to trace the story with a pencil, framed by colourful cartoon cats, so reading and writing practice feel like play for 5 to 13-year-olds.',
+    cover: 'assets/work/design/magazine/cat-story-1.jpg',
+    gallery: ['assets/work/design/magazine/cat-story-1.jpg','assets/work/design/magazine/cat-story-2.jpg','assets/work/design/magazine/cat-story-3.jpg'],
+    aspect: '7/9',
+    badge: '3 pages',
+    scope: ['Story layout', 'Handwriting practice pages', 'Illustration placement', 'Team project']
+  },
+  {
+    disciplines: ['Graphic design'],
+    group: 'College magazine',
+    category: 'College magazine · Activity pages',
+    client: 'Kids magazine (college project)',
+    title: 'Draw, Colour & Make',
+    summary: 'Hands-on pages: finish the fox, colour and cut out a tiger mask.',
+    description: 'Activity pages that get children drawing and making. “Draw the Fox” asks them to finish the other half of a fox’s face, and a two-page “Make a Mask” spread gives them a tiger mask to colour and cut out, alongside fun tiger facts told by a friendly cartoon tree.',
+    cover: 'assets/work/design/magazine/create-your-mask.jpg',
+    gallery: ['assets/work/design/magazine/draw-the-fox.jpg','assets/work/design/magazine/make-a-mask.jpg','assets/work/design/magazine/create-your-mask.jpg'],
+    aspect: '7/9',
+    badge: '3 pages',
+    scope: ['Activity page design', 'Kids’ illustration layout', 'Team project']
+  },
+  {
+    disciplines: ['Graphic design'],
+    group: 'College magazine',
+    category: 'College magazine · Ads',
+    client: 'Kids magazine (college project)',
+    title: 'Kids Magazine Ads',
+    summary: 'Bright, full-page ads for an art class and a summer camp.',
+    description: 'Full-page ads designed for the magazine, made colourful and easy for children to read. A dripping-paint “Kids Art Class” ad lists drawing, watercolour, acrylic, glass and portrait painting for ages 3+, and a “Kids Summer Camp 2022” poster invites children to make new friends over a weekend of fun activities.',
+    cover: 'assets/work/design/magazine/kids-art-class-ad.jpg',
+    gallery: ['assets/work/design/magazine/kids-art-class-ad.jpg','assets/work/design/magazine/summer-camp-ad.jpg'],
+    aspect: '7/9',
+    badge: '2 ads',
+    scope: ['Ad design', 'Colour & layout', 'Team project']
+  },
+
+  // ---------- DOCUMENTARY & VISUAL STORIES ----------
+  {
+    disciplines: ['Documentary & visual stories'],
+    category: 'Short film · Drama thriller',
+    client: 'Eeram Production',
+    title: 'Vanth',
+    summary: 'A Tamil drama-thriller short film. Pre-production, key grip and promotion.',
+    description: 'A Tamil drama-thriller short film directed by Roby Jayson for Eeram Production. I worked in the pre-production team, served as key grip on set, and helped promote the film around its release.',
+    youtube: 'https://youtu.be/RA--Ok5uAg4',
+    scope: ['Pre-production', 'Key grip', 'Film promotion']
+  },
   {
     disciplines: ['Motion graphics'],
     category: 'Reel · Menu launch',
