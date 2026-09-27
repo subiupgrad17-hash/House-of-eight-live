@@ -1,0 +1,26 @@
+HOUSE OF EIGHT — HOW TO ADD YOUR WORK
+=====================================
+
+1. Put your files in  assets/work/
+   - Images: .jpg or .webp, about 1600px wide, under 500 KB each
+   - Videos: .mp4 (H.264), under ~20 MB. Longer films: upload to YouTube/Vimeo and use "link"
+   - Use simple names with no spaces:  aether-cover.jpg, aether-1.jpg, rituals-reel.mp4
+
+2. Open  projects.js  in any text editor (Notepad, TextEdit, VS Code).
+   Each project is one { ... } block. Change the text and file names.
+   To add one: copy a whole block, paste it after the last one, and keep a comma between blocks.
+   The first project in the list becomes the big card.
+
+3. Save, open index.html in your browser to check, then re-upload the folder to your host.
+
+Other things you may want to change (all in index.html):
+   - Services: search for  const services=
+   - About text / process steps: search for  About me.
+   - Email address: search for  workwithhouseofeight@gmail.com  (replace every one)
+   - Portrait / logo: replace assets/portrait.jpg and assets/logo.png with files of the same name
+
+ADDING WORK TO THE 8 DISCIPLINES (Short-form video, Motion graphics, ...)
+   - Scroll to DISCIPLINE_WORK at the bottom of projects.js and copy a block.
+   - Set  disciplines: ['Short-form video']  (use the exact names listed there; a work can have several).
+   - Reels: put the .mp4 in assets/work/short-form/ and a poster .jpg next to it.
+     Keep each video under ~15 MB (720x1280, H.264) so it loads fast.
